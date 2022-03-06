@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOBEL CAKES</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #3f7fce;
+            margin: 0;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /*  Estilo de navegación */
+        nav {
+            float: left;
+            height: 150px;
+            width: 100%;
+            background: #d4e4f8;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            text-align: left;
+            display:inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            width: 100px;
+            float: left;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav ul li a{
+            color: #3f7fce;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav ul li a:hover{
+            font-weight: bold; 
+        }
+
+        /* Estilo de article */
+        article {
+            float: left;
+            width: 100%;
+            background-color: #f1f1f1;
+            height: 300px;
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-top: 50px;
+            padding-bottom: 80px;
+            height: 730px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */ 
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Estilo de imágenes y menú */
+        .icons{
+            color: #8fb7e7;
+            margin: 0;
+            text-decoration: none;
+            
+        }
+
+        .menuIcons{
+            width: 75px;
+            height: 75px;
+        }
+        
+        .menuSelect{
+            width: 75px;
+            height: 75px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Estilo de elementos */
+        h1,h2{
+            text-align: center;
+        }
+        
+        p{
+            text-align: justify;
+        }
+
+        .pc{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="DobelCakes.jpg" alt="Logo de Dobel Cake" width="200px" height="200px">
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="menuSelect"><img src="inicio.png" alt="Inicio" class="menuIcons">Inicio</a></li>
+                <li><a href="menu.html"><img src="menu.png" alt="Menú" class="menuIcons">Menú</a></li>
+                <li><a href="pedido.html"><img src="pedido.png" alt="Pedido" class="menuIcons">Pedido</a></li>
+                <li><a href="chef.html"><img src="chef.png" alt="Chef" class="menuIcons">Chef</a></li>
+                <li><a href="informacion.html"><img src="informacion.png" alt="Información" class="menuIcons">Información</a></li> 
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <article>
+            <h1>BIENVENIDOS A LA PASTELERÍA</h1>
+            <h2>DOBEL CAKES</h2>
+            <br>
+            <p>La pastelería DOBEL CAKES les da la más cordial bienvenida, aquí podrás encontrar la más deliciosa selección de pasteles.</p>
+            <p>Te invitamos a que veas nuestra gran variedad de opciones en nuestro menú y que hagas tu pedido eligiendo entre una gran cantidad de posibilidades.</p>
+            <p>Gracias por tu preferencia de parte de todo el equipo pastelero.</p>
+            <br>
+            <img src="pasteleria.jpg" alt="foto de una pastelería">
+            <!-- Foto de Maria Orlova en Pexels -->
+        </article>
+    </section>
+    <footer>
+        <p class="pc">DOBEL CAKES © 2022 Todos los derechos reservados.</p>
+        <a href="https://www.flaticon.com/free-icons/menu" title="menu icons" class="icons"> icons created by Freepik - Flaticon</a>
+    </footer>
+</body>
+</html>

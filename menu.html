@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOBEL CAKES</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #3f7fce;
+            margin: 0;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Estilo de navegación */
+        nav {
+            float: left;
+            height: 150px;
+            width: 100%;
+            background: #d4e4f8;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            text-align: left;
+            display:inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            width: 100px;
+            float: left;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav ul li a{
+            color: #3f7fce;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav ul li a:hover{
+            font-weight: bold; 
+        }
+
+        /* Estilo de article */
+        article {
+            float: left;
+            width: 100%;
+            background-color: #f1f1f1;
+            height: 300px;
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-top: 50px;
+            padding-bottom: 80px;
+            height: 930px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Estilo de menú */
+        .icons{
+            color: #8fb7e7;
+            margin: 0;
+            text-decoration: none;
+        }
+        
+        .menuIcons{
+            width: 75px;
+            height: 75px;
+        }
+        
+        .menuSelect{
+            width: 75px;
+            height: 75px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Estilo de elementos */
+        h1,h2{
+            text-align: center;
+        }
+
+        table th{
+            text-align: left;
+            color: #3f7fce;
+            font-size: 35px;
+        }
+
+        table td{
+            padding-right: 120px;
+            color: #333;
+            border: none;
+            padding-left: 15px;   
+        }
+
+        table td:nth-child(2n){
+            text-align: right;
+            color: #3f7fce;
+            padding-right: 15px;
+        }
+
+        table tr:nth-child(2n+1) {
+            background: #d4e4f8;
+        }
+
+        table tr:first-child {
+            background:none;
+            height: 50px;
+        }
+
+        table tr{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+            height: 30px;
+        }
+
+        dl dt{
+            text-align: left;
+            color: #3f7fce;
+            font-size: 35px;
+            font-weight: bold; 
+        }
+
+        dl dd{
+            color: #333;
+            padding-top: 8px;
+        }
+
+        ul li{
+            color: #333;
+        }
+
+        /* Estilo de clases */
+        .titulo{              
+            font-weight: bold;
+            color: #3f7fce;
+            font-size: 35px; 
+            padding: 0;
+            margin-bottom: 0;
+        }
+        
+        .li{
+            padding-top: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="DobelCakes.jpg" alt="Logo de Dobel Cake" width="200px" height="200px">
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="inicio.png" alt="Inicio" class="menuIcons">Inicio</a></li>
+                <li><a href="menu.html" class="menuSelect"><img src="menu.png" alt="Menú" class="menuIcons">Menú</a></li>
+                <li><a href="pedido.html"><img src="pedido.png" alt="Pedido" class="menuIcons">Pedido</a></li>
+                <li><a href="chef.html"><img src="chef.png" alt="Chef" class="menuIcons">Chef</a></li>
+                <li><a href="informacion.html"><img src="informacion.png" alt="Información" class="menuIcons">Información</a></li> 
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <article>
+            <h1>MENÚ</h1>
+            <br>
+            <table>
+                <tr>
+                    <th colspan="2">Sabores</th>
+                </tr>
+                <tr>
+                    <td>Limón</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>Fresa</td>
+                    <td>$60.00</td>
+                </tr>
+                <tr>
+
+                    <td>Coco</td>
+                    <td>$70.00</td>
+                </tr>
+                <tr>
+                    <td>Cheesecake</td>
+                    <td>$80.00</td>
+                </tr>
+                <tr>
+                    <td>Vainilla</td>
+                    <td>$90.00</td>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>$80.00</td>
+                </tr>
+                <tr>
+                    <td>Café</td>
+                    <td>$70.00</td>
+                </tr>
+                <tr>
+                    <td>Plátano</td>
+                    <td>$60.00</td>
+                </tr>
+            </table>
+            <h3 class="titulo">Adornos</h3>
+            <ul>
+                <li class="li">Decorado chocolate.............$25</li>
+                <li class="li">Frutas...................................$30</li>
+                <li class="li">Números cumpleaños..........$35</li>
+                <li class="li">Galletas Oreo.......................$30</li>
+                <li class="li">Flores...................................$25</li>
+            </ul>
+            <br>
+            <dl>
+                <dt>Bebidas</dt>
+                    <dd>Café.....................................$25</dd>
+                    <dd>Chocolate............................$30</dd>
+                    <dd>Latte....................................$25</dd>
+                    <dd>Capuchino...........................$20</dd>
+            </dl>
+        </article>
+    </section>
+    <footer>
+        <p>DOBEL CAKES © 2022 Todos los derechos reservados.</p>
+        <a href="https://www.flaticon.com/free-icons/menu" title="menu icons" class="icons"> icons created by Freepik - Flaticon</a>
+    </footer>
+</body>
+</html>

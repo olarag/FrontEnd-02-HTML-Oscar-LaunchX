@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOBEL CAKES</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #3f7fce;
+            margin: 0;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        
+        /* Estilo de navegación */
+        nav {
+            float: left;
+            height: 150px;
+            width: 100%;
+            background: #d4e4f8;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            text-align: left;
+            display:inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            width: 100px;
+            float: left;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav ul li a{
+            color: #3f7fce;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav ul li a:hover{
+            font-weight: bold; 
+        }
+
+        /* Estilo de article */
+        article {
+            float: left;
+            width: 100%;
+            background-color: #f1f1f1;
+            height: 300px;
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-top: 50px;
+            padding-bottom: 80px;
+            height: 900px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Estilo de menú */
+        .icons{
+            color: #8fb7e7;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        .menuIcons{
+            width: 75px;
+            height: 75px;
+        }
+
+        .menuSelect{
+            width: 75px;
+            height: 75px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Estilo de elementos */
+        h1,h2{
+            text-align: center;
+        }
+        
+        label{
+            color: #333;
+        }
+
+        /* Estilo de clases */
+        .titulo{              
+            font-weight: bold;
+            color: #3f7fce;
+            font-size: 35px; 
+            padding: 0;
+            margin-bottom: 0;
+        }
+        
+        .entrada{
+            height: 35px;
+            width: 250px;
+            color: #3f7fce;
+            padding: 5px;
+            border: 1px solid #3f7fce;
+            border-radius: 5px;
+        }
+
+        .sp{
+            margin-top: 35px;
+        }
+
+        .boton{
+            height: 30px;
+            width: 150px;
+            background-color: #3f7fce;
+            color: #fff;
+            border: 1px solid #3f7fce;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="DobelCakes.jpg" alt="Logo de Dobel Cake" width="200px" height="200px">
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="inicio.png" alt="Inicio" class="menuIcons">Inicio</a></li>
+                <li><a href="menu.html"><img src="menu.png" alt="Menú" class="menuIcons">Menú</a></li>
+                <li><a href="pedido.html" class="menuSelect"><img src="pedido.png" alt="Pedido" class="menuIcons">Pedido</a></li>
+                <li><a href="chef.html"><img src="chef.png" alt="Chef" class="menuIcons">Chef</a></li>
+                <li><a href="informacion.html"><img src="informacion.png" alt="Información" class="menuIcons">Información</a></li> 
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <article>
+            <h1>PEDIDO</h1>
+            <!-- Información del sabores-->
+            <h3 class="titulo">Sabores</h3>
+            <input type="checkbox" id="Sabor1" name="Sabor1" value="Limon">
+            <label for="Sabor1">Limón</label><br>
+            <input type="checkbox" id="Sabor2" name="Sabor2" value="Fresa">
+            <label for="Sabor2">Fresa</label><br>
+            <input type="checkbox" id="Sabor3" name="Sabor3" value="Coco">
+            <label for="Sabor3">Coco</label><br>
+            <input type="checkbox" id="Sabor4" name="Sabor4" value="Cheesecake">
+            <label for="Sabor4">Cheesecake</label><br>
+            <input type="checkbox" id="Sabor5" name="Sabor5" value="Vainilla">
+            <label for="Sabor5">Vainilla</label><br>
+            <input type="checkbox" id="Sabor6" name="Sabor6" value="Chocolate">
+            <label for="Sabor6">Chocolate</label><br>
+            <input type="checkbox" id="Sabor7" name="Sabor7" value="Cafe">
+            <label for="Sabor7">Café</label><br>
+            <input type="checkbox" id="Sabor8" name="Sabor8" value="Platano">
+            <label for="Sabor8">Plátano</label><br>
+            <!-- Información del adornos-->
+            <h3 class="titulo">Adornos</h3>
+            <input type="checkbox" id="Adorno1" name="Adorno1" value="Chocolate">
+            <label for="Adorno1">Decorado chocolate</label><br>
+            <input type="checkbox" id="Adorno2" name="Adorno2" value="Frutas">
+            <label for="Adorno2">Frutas</label><br>
+            <input type="checkbox" id="Adorno3" name="Adorno3" value="Numeros">
+            <label for="Adorno3">Números cumpleaños</label><br>
+            <input type="checkbox" id="Adorno4" name="Adorno4" value="Oreo">
+            <label for="Adorno4">Galletas Oreo</label><br>
+            <input type="checkbox" id="Adorno5" name="Adorno5" value="Flores">
+            <label for="Adorno5">Flores</label><br>
+            <!-- Información del cliente-->
+            <h3 class="titulo">Información</h3>
+            <label for="Nombre" class="sp">Ingresa tu nombre</label><br>
+            <input type="input" id="Nombre" name="Nombre" class="entrada"><br>
+            <label for="Telefono" class="sp">Ingresa tu teléfono</label><br>
+            <input type="tel" id="Telefono" name="Telefono" maxlength="10" class="entrada"><br>
+            <label for="Correo" class="sp">Ingresa tu correo</label><br>
+            <input type="email" id="Correo" name="Correo" class="entrada"><br>
+            <label for="Descripcion" class="sp">Descripción de tu pastel</label><br>
+            <input type="input" id="Descripcion" name="Descripcion" class="entrada"><br><br>
+            <input type="submit" class="boton"><br>
+        </article>
+    </section>
+    <footer>
+        <p>DOBEL CAKES © 2022 Todos los derechos reservados.</p>
+        <a href="https://www.flaticon.com/free-icons/menu" title="menu icons" class="icons"> icons created by Freepik - Flaticon</a>
+    </footer>
+</body>
+</html>

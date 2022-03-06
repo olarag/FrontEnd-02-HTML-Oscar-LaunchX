@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOBEL CAKES</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #3f7fce;
+            margin: 0;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Estilo de navegación */
+        nav {
+            float: left;
+            height: 150px;
+            width: 100%;
+            background: #d4e4f8;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            text-align: left;
+            display:inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            width: 100px;
+            float: left;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav ul li a{
+            color: #3f7fce;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav ul li a:hover{
+            font-weight: bold; 
+        }
+
+        /* Estilo de article */
+        article {
+            float: left;
+            width: 100%;
+            background-color: #f1f1f1;
+            height: 300px;
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-top: 50px;
+            padding-bottom: 80px;
+            height: 1000px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Estilo de menú */
+        .icons{
+            color: #8fb7e7;
+            margin: 0;
+            text-decoration: none;            
+        }
+
+        .menuIcons{
+            width: 75px;
+            height: 75px;
+        }
+
+        .menuSelect{
+            width: 75px;
+            height: 75px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Estilo de elementos */
+        h1,h2{
+            text-align: center;
+        }
+
+        ul li{
+            color: #333;
+        }
+
+        table th{
+            text-align: left;
+            color: #fff;
+            background-color: #3f7fce;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        table td{
+            color: #333;
+            border: none;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        table tr:nth-child(2n+1) {
+            background: #d4e4f8;
+        }
+
+        table tr:first-child {
+            background:none;
+        }
+
+        table tr{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            height: 30px;
+        }
+
+        /* Estilo de clases */
+        .titulo{              
+            font-weight: bold;
+            color: #3f7fce;
+            font-size: 35px; 
+            padding: 0;
+            margin-bottom: 0;
+        }
+        
+        .li{
+            padding-top: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="DobelCakes.jpg" alt="Logo de Dobel Cake" width="200px" height="200px">
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="inicio.png" alt="Inicio" class="menuIcons">Inicio</a></li>
+                <li><a href="menu.html"><img src="menu.png" alt="Menú" class="menuIcons">Menú</a></li>
+                <li><a href="pedido.html"><img src="pedido.png" alt="Pedido" class="menuIcons">Pedido</a></li>
+                <li><a href="chef.html" class="menuSelect"><img src="chef.png" alt="Chef" class="menuIcons">Chef</a></li>
+                <li><a href="informacion.html"><img src="informacion.png" alt="Información" class="menuIcons">Información</a></li> 
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <article>
+            <h1>CHEF</h1>
+            <h3 class="titulo">Sabores disponibles</h3>
+            <ul>
+                <li class="li">Limón............................................4</li>
+                <li class="li">Fresa.............................................2</li>
+                <li class="li">Cheesecake..................................1</li>
+                <li class="li">Vainilla...........................................6</li>
+                <li class="li">Chocolate......................................5</li>
+                <li class="li">Café...............................................3</li>
+                <li class="li">Plátano..........................................4</li>
+            </ul>
+            <h3 class="titulo">Adornos disponibles</h3>
+            <ul>
+                <li class="li">Decorado chocolate.....................10</li>
+                <li class="li">Frutas.............................................5</li>
+                <li class="li">Números cumpleaños....................4</li>
+                <li class="li">Galletas Oreo.................................0</li>
+                <li class="li">Flores.............................................5</li>
+            </ul>
+            <h3 class="titulo">Pedidos pendientes</h3>
+            <br>
+            <table>
+                <tr>
+                    <th>Sabores</th>
+                    <th>Adornos</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>Limón</td>
+                    <td>Fruta</td>
+                    <td>Daniela Castro</td>
+                    <td>4562485376</td>
+                    <td>danielaca@gmail.com</td>
+                    <td>Limón con adorno de fruta.</td>
+                </tr>
+                <tr>
+                    <td>Vainilla, Plátano</td>
+                    <td>Galletas Oreo</td>
+                    <td>Sebastián Ortega</td>
+                    <td>3764562485</td>
+                    <td>sebastianor@hotmail.com</td>
+                    <td>Vainilla con plátano con adorno de galletas Oreo.</td>
+                </tr>
+                <tr>
+                    <td>Cheesecake</td>
+                    <td>Flores</td>
+                    <td>Frida Cárdenasz</td>
+                    <td>4853764562</td>
+                    <td>fridaca@hotmail.com</td>
+                    <td>Cheesecake con flores</td>
+                </tr>
+                <tr>
+                    <td>Café, Limón</td>
+                    <td>sin adorno</td>
+                    <td>Fernando Ugarte</td>
+                    <td>5624853764</td>
+                    <td>fernandoug@gmail.com</td>
+                    <td>Café con limón</td>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>Números</td>
+                    <td>Daniela Rosales</td>
+                    <td>7645624853</td>
+                    <td>danielaro@hotmail.com</td>
+                    <td>Chocolate con números</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+    <footer>
+        <p>DOBEL CAKES © 2022 Todos los derechos reservados.</p>
+        <a href="https://www.flaticon.com/free-icons/menu" title="menu icons" class="icons"> icons created by Freepik - Flaticon</a>
+    </footer>
+</body>
+</html>
